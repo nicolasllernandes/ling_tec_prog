@@ -1,18 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
-int main(int argc, char *argv[]) {
+int main() {
 	
-	float base, altura, area;
+	float base, altura, area; //declaração de variáveis
 	
-	base = 10;
-	altura = 18;
-	area = base * altura / 2;
+	base = 10; //base do triângulo
+	altura = 18; //altura do triângulo
+	area = base * altura / 2; //área do triângulo
 	
-	printf("A area do triangulo de base %f e altura %f eh %f", base, altura, area);
+	printf("A area do triangulo de base %f e altura %f eh %f", base, altura, area); //imprimindo a mensagem na tela
+	
+	return 0; //depois de executar o programa, retornar 0
 
-
-	return 0;
+		/*DICA: ctrl + espaço para usar o auto complete!*/
 }

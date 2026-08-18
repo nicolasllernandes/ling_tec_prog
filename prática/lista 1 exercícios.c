@@ -3,7 +3,9 @@
 #include <math.h>
 
 int main(int argc, char *argv[]) {
-//1
+
+//Ex 1
+	
 	int A, B;
 	
 	scanf("%d", &A);
@@ -12,7 +14,8 @@ int main(int argc, char *argv[]) {
 
 
 
-//2
+//Ex 2
+	
 	double valor;
 	int expoente;
 	scanf("%lf", &valor);
@@ -29,7 +32,8 @@ int main(int argc, char *argv[]) {
 	printf("%lf x 10^%d", valor, expoente);
 	
 
-//3
+//Ex 3
+	
 	int numero, resultado, bits2, bits4, bits8, bits16, bits32, bits64;
 	
 	printf("Entre com o valor de N: ");
@@ -55,7 +59,8 @@ int main(int argc, char *argv[]) {
 	
 	
 	printf("%d = %d%d%d%d%d%d%d", numero, resultado%2, bits2, bits4, bits8, bits16, bits32, bits64);
-//4	
+
+	//Ex 4	
 	
 	float salariofixo, vendas, total;
 	
@@ -67,7 +72,8 @@ int main(int argc, char *argv[]) {
 	printf("Total = %0.2f", total);
 
 
-//5	
+//Ex 5	
+	
 	float valor1, valor2, valor3, valor4, soma, media, produtorio;
 	printf("Digite o primeiro valor: \n");
 	scanf("%f", &valor1);
@@ -88,7 +94,7 @@ int main(int argc, char *argv[]) {
 	printf ("Soma dos valores: %0.2f\nMedia dos valores: %0.2f\nProdutorio dos valores:%0.2f", soma, media, produtorio);
 
 	
-//6
+//Ex 6
 	int idade_dias, ano, mes, dias;
 	printf("Informar a idade em dias: \n");
 	
@@ -100,7 +106,8 @@ int main(int argc, char *argv[]) {
  	printf("A idade é de %d anos, %d meses e %d dias", ano, mes, dias);
 	
 
-//7	
+//Ex 7	
+	
 	float volume_esfera, pi, R;
 	
 	pi = 3.14159;
@@ -111,7 +118,8 @@ int main(int argc, char *argv[]) {
 	printf("O Volume da esfera de Raio %f eh %f", R, volume_esfera);
 	
 
-//8
+//Ex 8
+	
 	float x1, y1, x2, y2, dist;
 	
 	printf("Insira x1: \n");

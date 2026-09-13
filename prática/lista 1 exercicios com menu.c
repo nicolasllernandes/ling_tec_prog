@@ -1,0 +1,135 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main(int argc, char *argv[]) {
+	int exercicio, A, B;
+	double valor;
+	int expoente;
+	int numero, resultado, bits2, bits4, bits8, bits16, bits32, bits64;
+	float salariofixo, vendas, total;
+	float valor1, valor2, valor3, valor4, soma, media, produtorio;
+	int idade_dias, ano, mes, dias;
+	float volume_esfera, pi, R;
+	float x1, y1, x2, y2, dist;
+
+
+printf("Selecione qual exercicio voce deseja rodar (1-8)");
+scanf("%d", &exercicio);
+
+	switch (exercicio){
+	
+		case 1:
+			printf("Insira um valor A");
+			scanf("%d", &A);
+			printf("Insira um valor B");
+			scanf("%d", &B);
+			printf("%d, %d", B, A);
+			break;
+			
+		case 2:
+			printf("Insira um valor: ");
+			scanf("%lf", &valor);
+			printf ("%.2e", valor);
+
+			break;
+			
+		case 3:
+			printf("Entre com o valor de N: ");
+			scanf("%d", &numero);
+	
+			bits64 = numero%2;
+			resultado = numero/2;
+	
+			bits32 = resultado%2;
+			resultado = resultado/2;
+	
+			bits16 = resultado%2;
+			resultado = resultado/2;
+	
+			bits8 = resultado%2;
+			resultado = resultado/2;
+	
+			bits4 = resultado%2;
+			resultado = resultado/2;
+	
+			bits2=resultado%2;
+			resultado = resultado/2;
+	
+	
+			printf("%d = %d%d%d%d%d%d%d", numero, resultado%2, bits2, bits4, bits8, bits16, bits32, bits64);
+			break;
+			
+		case 4:
+			printf("Qual o salario?");
+			scanf("%f", &salariofixo);
+			printf("Qual o total em vendas?");
+			scanf("%f", &vendas);
+			total = salariofixo + (vendas * 0.15);
+			printf("Total = %0.2f", total);
+			break;
+		
+		case 5:
+			printf("Digite o primeiro valor: \n");
+			scanf("%f", &valor1);
+
+			printf("Digite o segundo valor: \n");
+			scanf ("%f", &valor2);
+	
+			printf("Digite o terceiro valor: \n");
+			scanf ("%f", &valor3);
+	
+			printf("Digite o quarto valor: \n");
+			scanf ("%f", &valor4);
+	
+			soma = valor1 + valor2 + valor3 + valor4;
+			media = (valor1 + valor2 + valor3 + valor4) / 4;
+			produtorio = valor1 * valor2 * valor3 * valor4;
+	
+			printf ("Soma dos valores: %0.2f\nMedia dos valores: %0.2f\nProdutorio dos valores:%0.2f", soma, media, produtorio);
+			break;
+			
+		case 6:
+			printf("Informar a idade em dias: \n");
+	
+ 			scanf("%d", &idade_dias);
+ 	
+ 			ano = idade_dias / 365;
+ 			mes = (idade_dias % 365) / 30;
+ 			dias = (idade_dias % 365) % 30;
+ 			printf("A idade é de %d anos, %d meses e %d dias", ano, mes, dias);
+ 			break;
+ 		
+ 		case 7:
+ 			pi = 3.14159;
+			printf("Insira um raio: \n");
+			scanf("%f", &R);
+	
+			volume_esfera =  (4.0/3.0)* pi * pow(R, 3);
+			printf("O Volume da esfera de Raio %f eh %f", R, volume_esfera);
+			break;
+		
+		case 8:
+			printf("Insira x1: \n");
+			scanf("%f", &x1);
+	
+			printf("Insira y1: \n");
+			scanf("%f", &y1);
+	
+	
+			printf("Insira x2: \n");
+			scanf("%f", &x2);
+	
+			printf("Insira y2: \n");
+			scanf("%f", &y2);	
+	
+			dist = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+	
+			printf("A Distancia euclidiana entre p1 e p2 eh %f", dist); 
+
+	
+			
+}
+	return 0;
+}

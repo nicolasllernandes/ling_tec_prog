@@ -18,10 +18,10 @@ int main(int argc, char *argv[]) {
 	digito_dois = ((um * 11 + dois * 10 + tres * 9 + quatro * 8 + cinco * 7 + seis * 6 + sete * 5 + oito * 4 + nove * 3 + dez * 2) * 10) % 11;
 	
 	if (digito_um == dez && digito_dois == onze){
-		printf("CPF v·lido!");
+		printf("CPF v√°lido!");
 	}
 	else{
-		printf("CPF inv·lido!");
+		printf("CPF inv√°lido!");
 	}
 	break;
 	

@@ -98,7 +98,7 @@ scanf("%d", &exercicio);
  			ano = idade_dias / 365;
  			mes = (idade_dias % 365) / 30;
  			dias = (idade_dias % 365) % 30;
- 			printf("A idade é de %d anos, %d meses e %d dias", ano, mes, dias);
+ 			printf("A idade Ã© de %d anos, %d meses e %d dias", ano, mes, dias);
  			break;
  		
  		case 7:

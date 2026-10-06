@@ -23,10 +23,10 @@ int main(int argc, char *argv[]) {
 			c = b;
 			b = aux;
 		}
-		printf("Os números em ordem crescente: %d %d %d", a, b, c);
+		printf("Os nÃºmeros em ordem crescente: %d %d %d", a, b, c);
 	
 	} else{
-		printf("Os números precisam ser distintos!");
+		printf("Os nÃºmeros precisam ser distintos!");
 	}
 	return 0;
 }
